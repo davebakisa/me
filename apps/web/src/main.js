@@ -346,7 +346,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const toggle = document.getElementById("langToggle");
   toggle.addEventListener("click", () => {
-    locale = locale === "fr" ? "en" : "fr";
+      //pense a remettre ceci lorsque tu auras fini avec la traduction anglaise
+    // locale = locale === "fr" ? "en" : "fr";
+    locale = "fr";
     setLocale(locale);
     render(locale);
     initReveal(); // re-run in case DOM nodes were rebuilt inside reveal containers
