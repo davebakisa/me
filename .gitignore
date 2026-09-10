@@ -4,5 +4,3 @@ dist
 *.log
 a.html
 b.html
-**/src/*
-index.html
