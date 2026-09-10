@@ -94,18 +94,38 @@ export default {
 
   projects: {
     kicker: "Projets",
-    title: "Pensés comme de vrais produits, pas comme des exercices",
+    title: "Dans le cadre de mon apprentissange, j'ai pu réaliser different projet entre autre",
     items: [
       {
-        name: "Marketplace",
+        name: "Backend e-commerce (MVP)",
         summary:
-          "Une plateforme de marché local où des vendeurs publient des produits et des clients passent commande — comptes utilisateurs, commandes, paiement et livraison, du début à la fin.",
-        stack: ["React", "Node.js", "Express", "MongoDB", "Redis", "Docker"],
+          "J'était chargé d'accompagné un groupe d'étudiant dans leur projet de site e-commerce, mettre en place une plateforme de marché local où un vendeur publie des produits et des clients passent commande — comptes utilisateurs, commandes, livraison",
+        stack: ["Node.js", "Express", "MongoDB"],
         problem: "Des vendeurs locaux veulent toucher des clients à proximité sans la lourdeur d'une grosse marketplace.",
-        solution: "Une marketplace ciblée : annonces, commandes, messagerie vendeur/client et suivi de livraison.",
-        architecture: "Frontend React, API Node/Express, MongoDB pour le catalogue et les commandes, Redis pour les sessions et le cache, le tout conteneurisé avec Docker.",
-        focus: "Gestion des utilisateurs, cycle de vie des commandes, communication vendeur/client, suivi de livraison, temps de réponse.",
-        github: "GitHub — lien à venir"
+        solution: "Un site e-commerce ciblé : annonces, commandes et suivi de livraison.",
+        architecture: "API Node/Express, MongoDB pour le catalogue et les commandes",
+        focus: "Gestion des utilisateurs, cycle de vie des commandes, suivi de livraison, temps de réponse.",
+        github: "Pas de lien"
+      },
+      {
+        name: "Recommendation des films",
+        summary: "mettre en place un agent AI pour recommander des filmes a des utilisateurs ",
+        stack: ["n8n","mongodb"],
+        problem: "Avoir des suggestions des films selon le nombre de vente, en cas d'indisponibilité du film recherché",
+        solution: "un agent Bot AI ",
+        architecture:"automatisation avec n8n, mongodb pour les films et utilisateurs ",
+        focus: "amelioration du prompt pour des meilleurs resultat",
+        github: "pas de lien"
+      },
+      {
+        name: "Moteur de recherche",
+        summary:"Optimisé la recherche de produit",
+        stack: ["Laravel", "Elasticsearch", "Mysql", "Flutter"],
+        problem: "Faire en sorte d'avoir des suggestion des produits lors des resultat d'une recherche",
+        solution: "Un moteur de recherche avancé",
+        architecture:"API Laravel , Mysql pour l'enregitrement des produit puis Elasticsearch pour la recherche, flutter pour l'interface grapique",
+        focus: "Traitement des requêtes",
+        github: "pas de lien"
       }
     ]
   },
