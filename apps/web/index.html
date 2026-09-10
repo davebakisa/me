@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dave — Développeur Fullstack</title>
+<meta name="description" content="Dave, développeur fullstack orienté backend." id="metaDescription" />
+
+<meta property="og:title" content="Dave — Fullstack Developer" id="ogTitle" />
+<meta property="og:description" content="I build web applications and backend systems that hold up." id="ogDescription" />
+<meta property="og:type" content="website" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0c10'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23e8a33d'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+
+<div class="signal-rail" id="signalRail">
+  <div class="signal-rail-fill" id="signalFill"></div>
+</div>
+
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand"><span class="mark"></span>Dave</a>
+    <nav class="nav-links">
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#experience" data-i18n="nav.experience">Experience</a>
+      <a href="#architecture" data-i18n="nav.architecture">Architecture</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">
+        <span class="lang-opt" data-lang="fr">FR</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-opt" data-lang="en">EN</span>
+      </button>
+      <a href="#contact" class="btn btn-secondary nav-cta" data-i18n="nav.cta">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" data-signal="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <div class="hero-eyebrow"><span>&#9679;</span> <span data-i18n="hero.eyebrow">Fullstack Developer</span></div>
+        <h1 data-i18n="hero.name">Dave</h1>
+        <p class="role" data-i18n="hero.role">Fullstack Developer</p>
+        <p class="tagline" data-i18n="hero.tagline">Tagline</p>
+        <p class="desc" data-i18n="hero.desc">Description</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero.viewWork">View my work</a>
+          <a href="#contact" class="btn btn-secondary" data-i18n="hero.contactMe">Contact me</a>
+        </div>
+      </div>
+      <div class="hero-diagram">
+        <svg viewBox="0 0 420 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="210" y1="55" x2="210" y2="115" stroke="#232936" stroke-width="1"/>
+          <line x1="210" y1="175" x2="210" y2="235" stroke="#232936" stroke-width="1"/>
+          <line x1="210" y1="295" x2="210" y2="325" stroke="#232936" stroke-width="1"/>
+
+          <rect x="110" y="20" width="200" height="52" rx="8" fill="#12161d" stroke="#232936"/>
+          <circle cx="132" cy="46" r="4" fill="#e8a33d"/>
+          <text x="148" y="42" fill="#e9e7e2" font-family="JetBrains Mono, monospace" font-size="13">Frontend</text>
+          <text x="148" y="58" fill="#8b929e" font-family="JetBrains Mono, monospace" font-size="10">HTML\CSS · React </text>
+
+          <rect x="110" y="120" width="200" height="52" rx="8" fill="#12161d" stroke="#232936"/>
+          <circle cx="132" cy="146" r="4" fill="#e8a33d"/>
+          <text x="148" y="142" fill="#e9e7e2" font-family="JetBrains Mono, monospace" font-size="13">API Layer</text>
+          <text x="148" y="158" fill="#8b929e" font-family="JetBrains Mono, monospace" font-size="10">REST · GraphQL</text>
+
+          <rect x="110" y="180" width="200" height="115" rx="8" fill="#12161d" stroke="#232936"/>
+          <circle cx="132" cy="206" r="4" fill="#e8a33d"/>
+          <text x="148" y="202" fill="#e9e7e2" font-family="JetBrains Mono, monospace" font-size="13">Services</text>
+          <text x="148" y="218" fill="#8b929e" font-family="JetBrains Mono, monospace" font-size="10">Node.js · Laravel · Elixir</text>
+          <line x1="130" y1="232" x2="290" y2="232" stroke="#232936" stroke-width="1"/>
+          <text x="148" y="252" fill="#8b929e" font-family="JetBrains Mono, monospace" font-size="10">concurrency</text>
+          <text x="148" y="270" fill="#8b929e" font-family="JetBrains Mono, monospace" font-size="10">real-time events</text>
+
+          <rect x="110" y="325" width="200" height="52" rx="8" fill="#12161d" stroke="#e8a33d"/>
+          <circle cx="132" cy="351" r="4" fill="#e8a33d"/>
+          <text x="148" y="347" fill="#e9e7e2" font-family="JetBrains Mono, monospace" font-size="13">Database</text>
+          <text x="148" y="363" fill="#8b929e" font-family="JetBrains Mono, monospace" font-size="10">Postgres · Redis · Mongo</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" data-signal="about">
+    <div class="wrap">
+      <div class="section-inner reveal">
+        <div class="section-kicker"><span class="dot"></span><span data-i18n="about.kicker">About</span></div>
+        <h2 class="section-title" data-i18n="about.title">Title</h2>
+        <div class="about-grid" id="aboutParagraphs"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" data-signal="skills">
+    <div class="wrap">
+      <div class="section-inner reveal">
+        <div class="section-kicker"><span class="dot"></span><span data-i18n="skills.kicker">Skills</span></div>
+        <h2 class="section-title" data-i18n="skills.title">Title</h2>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MINDSET ================= -->
+  <section id="mindset" data-signal="mindset">
+    <div class="wrap">
+      <div class="section-inner reveal">
+        <div class="section-kicker"><span class="dot"></span><span data-i18n="mindset.kicker">Approach</span></div>
+        <h2 class="section-title" data-i18n="mindset.title">Title</h2>
+        <p class="section-lede" data-i18n="mindset.lede">Lede</p>
+        <div class="mindset-grid" id="mindsetGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" data-signal="projects">
+    <div class="wrap">
+      <div class="section-inner reveal">
+        <div class="section-kicker"><span class="dot"></span><span data-i18n="projects.kicker">Projects</span></div>
+        <h2 class="section-title" data-i18n="projects.title">Title</h2>
+        <div class="project-list" id="projectList"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ELIXIR / SYSTEMS ================= -->
+  <!-- <section class="elixir-section" data-signal="elixir">
+    <div class="wrap">
+      <div class="section-inner reveal">
+        <div class="section-kicker"><span class="dot"></span><span data-i18n="elixir.kicker">Systems</span></div>
+        <h2 class="section-title" data-i18n="elixir.title">Title</h2>
+        <div class="elixir-grid">
+          <div class="elixir-flow" id="elixirFlow"></div>
+          <div class="elixir-text">
+            <p data-i18n="elixir.text">Text</p>
+            <div class="elixir-tags" id="elixirTags"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ================= ARCHITECTURE ================= -->
+  <section id="architecture" data-signal="architecture">
+    <div class="wrap">
+      <div class="section-inner reveal">
+        <div class="section-kicker"><span class="dot"></span><span data-i18n="architecture.kicker">Architecture</span></div>
+        <h2 class="section-title" data-i18n="architecture.title">Title</h2>
+        <p class="section-lede" data-i18n="architecture.lede">Lede</p>
+        <div class="arch-wrap">
+          <div class="arch-diagram" id="archDiagram"></div>
+          <div class="arch-detail" id="archDetail">—</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" data-signal="experience">
+    <div class="wrap">
+      <div class="section-inner reveal">
+        <div class="section-kicker"><span class="dot"></span><span data-i18n="experience.kicker">Experience</span></div>
+        <h2 class="section-title" data-i18n="experience.title">Title</h2>
+        <div id="experienceContainer"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TIMELINE ================= -->
+  <!-- <section data-signal="timeline"> -->
+    <!-- <div class="wrap">
+      <div class="section-inner reveal">
+        <div class="section-kicker"><span class="dot"></span><span data-i18n="timeline.kicker">Journey</span></div>
+        <h2 class="section-title" data-i18n="timeline.title">Title</h2>
+        <div class="timeline" id="timelineSteps"></div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" data-signal="contact">
+    <div class="wrap">
+      <div class="section-inner reveal">
+        <div class="section-kicker"><span class="dot"></span><span data-i18n="contact.kicker">Contact</span></div>
+        <h2 class="section-title" data-i18n="contact.title">Title</h2>
+        <p class="section-lede" data-i18n="contact.lede">Lede</p>
+
+        <div class="contact-grid">
+          <div>
+            <div class="contact-links">
+              <a href="mailto:davebakisa21@gmail.com" class="contact-link">
+                <span data-i18n="contact.email">Email</span> <span class="arrow">↗</span>
+              </a>
+              <a href="https://github.com/davebakisa" class="contact-link">
+                <span data-i18n="contact.github">GitHub</span> <span class="arrow">↗</span>
+              </a>
+              <a href="www.linkedin.com/in/dave-bakisa-734789347" class="contact-link">
+                <span data-i18n="contact.linkedin">LinkedIn</span> <span class="arrow">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <form id="contactForm">
+            <div class="form-field">
+              <label for="name" data-i18n="contact.form.name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-field">
+              <label for="email" data-i18n="contact.form.email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-field">
+              <label for="message" data-i18n="contact.form.message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Send</button>
+            <p class="form-note" id="formNote" data-i18n="contact.form.note">Note</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Dave — <span data-i18n="footer.role">Fullstack Developer</span></div>
+    <div class="footer-links">
+      <a href="https://github.com/davebakisa" data-i18n="contact.github">GitHub</a> ·
+      <a href="www.linkedin.com/in/dave-bakisa-734789347" data-i18n="contact.linkedin">LinkedIn</a> ·
+      <a href="mailto:davebakisa21@gmail.com" data-i18n="contact.email">Email</a>
+    </div>
+    <div class="footer-copy" data-i18n="footer.copy">© 2026 Dave</div>
+  </div>
+</footer>
+
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
