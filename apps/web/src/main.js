@@ -30,7 +30,7 @@ function setLocale(locale) {
 function applyStaticText(c) {
   document.documentElement.lang = c.locale;
   document.title = c.meta.title;
-
+  
   const metaDesc = document.getElementById("metaDescription");
   if (metaDesc) metaDesc.setAttribute("content", c.meta.description);
 
@@ -310,9 +310,28 @@ function initContactForm(c) {
   const form = document.getElementById("contactForm");
   const note = document.getElementById("formNote");
   if (!form) return;
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", function(e){
     e.preventDefault();
-    note.textContent = c.contact.form.sent;
+    const formData = new FormData(this)
+    let datas = {}
+    for (const [key,value] of formData.entries()) {
+      datas[key]=value
+    }
+    console.log(datas);
+    
+    fetch("http://localhost:4000", {
+      method: "POST",
+      headers: "Content-Type:Application/json",
+      body:JSON.stringify(datas)
+    }).then(result => { 
+      if (!result.ok) throw new Error("une erreur est survenue !!")
+      note.textContent = c.contact.form.sent;
+      note.style.color="#e8a33d"   
+    })
+    .catch(({ message }) => {
+      note.textContent = "une petie erreur est survenue, je vous prie de réesayer"
+      note.style.color="#f16f24"  
+      })
   });
 }
 

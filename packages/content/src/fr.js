@@ -2,9 +2,9 @@ export default {
   locale: "fr",
 
   meta: {
-    title: "Dave — Développeur Fullstack",
+    title: "Dave",
     description:
-      "Dave, développeur fullstack orienté backend : architectures, API, bases de données et systèmes temps réel."
+      "Dave, développeur fullstack"
   },
 
   nav: {
@@ -184,7 +184,7 @@ export default {
     empty: {
       title: "Pas encore d'expérience professionnelle listée ici",
       text:
-        "Je n'ai pas encore travaillé en entreprise, donc plutôt que d'inventer un historique, voici ce qui compte à la place : les projets ci-dessus montrent ce que je sais construire aujourd'hui, et mon parcours de développement montre comment j'en suis arrivé là.",
+        "Enquête d'une première experience professionnel, toute fois, les projets ci-dessus montrent ce que je sais construire aujourd'hui, et mon parcours de développement montre comment j'en suis arrivé là.",
       ctaProjects: "Voir mes projets",
       ctaJourney: "Voir mon parcours"
     }
@@ -208,8 +208,8 @@ export default {
       email: "Email",
       message: "Message",
       submit: "Envoyer",
-      note: "Ce formulaire est un modèle — à brancher sur un service d'envoi d'email ou un backend pour recevoir réellement les messages.",
-      sent: "Message capturé localement — connecte ce formulaire à un service d'email ou une API pour l'envoyer réellement."
+      note: "Je serai ravis de vous être utile.",
+      sent: "Message capturé !."
     }
   },
 
