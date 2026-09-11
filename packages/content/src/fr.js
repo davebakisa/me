@@ -20,9 +20,9 @@ export default {
   hero: {
     eyebrow: "Développeur Fullstack",
     name: "Dave Bakisa",
-    role: "Développeur Fullstack, orienté backend",
-    tagline: "Je conçois des applications web et des systèmes backend qui tiennent la route.",
-    desc: "Fullstack avec une vraie préférence pour le backend : architecture, bases de données, API et systèmes temps réel.",
+    role: "Développeur Fullstack",
+    tagline: "",
+    desc: "Fullstack avec une vraie préférence pour le backend : architecture, bases de données, API",
     viewWork: "Voir mes projets",
     contactMe: "Me contacter"
   },
