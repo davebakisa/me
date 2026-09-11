@@ -319,14 +319,10 @@ function initContactForm(c) {
     // }
     // console.log(datas);
     const messages = `
-    Nouveau message depuis mon portfolio
-    
-    Nom : ${e.target.name.value}
-    Email : ${e.target.email.value}
-    
-    Message :
-    ${e.target.message.value}
-      `.trim();
+    *MESSAGE DEPUIS VOTRE PORTFOLIO*
+    Je me présente *${e.target.name.value}* ${e.target.email.value}
+
+    ${e.target.message.value}`.trim();
     
     const phone = "243849474773";
     
