@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "packageManager": "pnpm@9.0.0",
+  "main": "",
   "scripts": {
     "dev": "pnpm --filter @dave/web dev",
     "build": "pnpm --filter @dave/web build",
