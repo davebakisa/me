@@ -313,25 +313,41 @@ function initContactForm(c) {
   form.addEventListener("submit", function(e){
     e.preventDefault();
     const formData = new FormData(this)
-    let datas = {}
-    for (const [key,value] of formData.entries()) {
-      datas[key]=value
-    }
-    console.log(datas);
+    // let datas = {}
+    // for (const [key,value] of formData.entries()) {
+    //   datas[key]=value
+    // }
+    // console.log(datas);
+    const messages = `
+    Nouveau message depuis mon portfolio
     
-    fetch("http://localhost:4000", {
-      method: "POST",
-      headers: "Content-Type:Application/json",
-      body:JSON.stringify(datas)
-    }).then(result => { 
-      if (!result.ok) throw new Error("une erreur est survenue !!")
-      note.textContent = c.contact.form.sent;
-      note.style.color="#e8a33d"   
-    })
-    .catch(({ message }) => {
-      note.textContent = "une petie erreur est survenue, je vous prie de réesayer"
-      note.style.color="#f16f24"  
-      })
+    Nom : ${e.target.name.value}
+    Email : ${e.target.email.value}
+    
+    Message :
+    ${e.target.message.value}
+      `.trim();
+    
+    const phone = "243849474773";
+    
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(messages)}`;
+    
+    window.open(whatsappUrl, "_blank")
+    note.textContent = c.contact.form.sent;
+    note.style.color="#e8a33d"
+    // fetch("http://localhost:4000", {
+    //   method: "POST",
+    //   headers: "Content-Type:Application/json",
+    //   body:JSON.stringify(datas)
+    // }).then(result => { 
+    //   if (!result.ok) throw new Error("une erreur est survenue !!")
+    //   note.textContent = c.contact.form.sent;
+    //   note.style.color="#e8a33d"   
+    // })
+    // .catch(({ message }) => {
+    //   note.textContent = "une petie erreur est survenue, je vous prie de réesayer"
+    //   note.style.color="#f16f24"  
+    //   })
   });
 }
 
