@@ -25,7 +25,7 @@ function setLocale(locale) {
   localStorage.setItem(STORAGE_KEY, locale);
 }
 
-/* ---------- static text (data-i18n) ---------- */
+/* ---------- static text (data-i1(8|7)n) ---------- */
 
 function applyStaticText(c) {
   document.documentElement.lang = c.locale;
@@ -39,6 +39,12 @@ function applyStaticText(c) {
     const value = getByPath(c, key);
     if (typeof value === "string") node.textContent = value;
   });
+  document.querySelectorAll("[data-i17n]").forEach(node=>{
+    const key = node.getAttribute("data-i17n");
+    const value = getByPath(c, key);
+    console.log(value)
+    if (typeof value === "string") node.href = value;
+  })
 }
 
 /* ---------- about (paragraphs) ---------- */

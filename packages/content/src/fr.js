@@ -22,7 +22,7 @@ export default {
     name: "Dave Bakisa",
     role: "Développeur Fullstack",
     tagline: "",
-    desc: "Fullstack avec une vraie préférence pour le backend : architecture, bases de données, API",
+    desc: "Spécialisé dans l'écosystème Javascript avec un intérêt particulier pour la conception d'application Web,Mobile et de service backend ",
     viewWork: "Voir mes projets",
     contactMe: "Me contacter"
   },
@@ -31,7 +31,7 @@ export default {
     kicker: "À propos",
     title: "Ce qui m'intéresse, c'est ce qu'il y a sous l'interface",
     paragraphs: [
-      "Je suis développeur fullstack, avec une préférence assez nette pour le backend : comment un système est construit, comment il tient dans le temps, et ce qui se passe quand la charge augmente.",
+      "Je suis développeur fullstack orienté Javascript, je développe des application web et des service backend en travaillant notament avec nodejs(express), React, les bases de données SQL et noSQL. J'ai un intérêt assez nette pour le backend : comment un système est construit, comment il tient dans le temps, et ce qui se passe quand la charge augmente.",
       "Je passe d'un écosystème à l'autre selon les besoins d'un projet — frontend, backend, bases de données, conteneurisation — sans me limiter à un seul outil.",
       "Ce qui m'intéresse vraiment, c'est comprendre comment les choses fonctionnent en dessous : la gestion de la concurrence, la circulation des données, les compromis d'architecture. Je préfère un système simple et compréhensible à un système impressionnant mais difficile à maintenir."
     ]
@@ -203,6 +203,9 @@ export default {
     email: "Email",
     github: "GitHub",
     linkedin: "LinkedIn",
+    WhatsApp: "WhatsApp",
+    phone:"243849474773",
+    
     form: {
       name: "Nom",
       email: "Email",
@@ -211,6 +214,12 @@ export default {
       note: "Je serai ravis de vous être utile.",
       sent: "Message capturé !."
     }
+  },
+  contactLink: {
+    WhatsApp: "https://wa.me/243849474773",
+    linkedIn: "https://linkedin.com/in/dave-bakisa-734789347",
+    email: "mailto:davebakisa21@gmail.com",
+    github: "https://github.com/davebakisa"
   },
 
   footer: {
